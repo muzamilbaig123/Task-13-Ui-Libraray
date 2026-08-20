@@ -7,7 +7,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { mode } = useSelector(
-    (state: { theme: { mode: string } }) => state.theme
+    (state: { theme: { mode: string } }) => state.theme,
   );
   console.log("this is theme->", mode);
 
@@ -34,12 +34,23 @@ const Navbar = () => {
       <ul className="hidden md:flex items-center gap-6 text-gray-500">
         <li
           onClick={() => navigate("components")}
-          className="cursor-pointer hover:text-black"
+          className="cursor-pointer hover:text-[var(--text-color)]"
         >
           Components
         </li>
-        <li className="cursor-pointer hover:text-black">About</li>
-        <li className="cursor-pointer hover:text-black">Templates</li>
+
+        <li
+          onClick={() => navigate("about")}
+          className="cursor-pointer hover:text-[var(--text-color)]"
+        >
+          About
+        </li>
+        <li
+          onClick={() => navigate("templates")}
+          className="cursor-pointer hover:text-[var(--text-color)]"
+        >
+          Templates
+        </li>
         {mode === "dark" && (
           <li
             className="cursor-pointer p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"

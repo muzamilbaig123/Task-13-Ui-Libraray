@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+
+    <!-- Icon Accent Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#818CF8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded Squircle Background -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+
+  <!-- Styled 'E' Icon for EaseUI -->
+  <path d="M160 150 C160 138.954 168.954 130 180 130 H330 C341.046 130 350 138.954 350 150 C350 161.046 341.046 170 330 170 H200 V236 H300 C311.046 236 320 244.954 320 256 C320 267.046 311.046 276 300 276 H200 V342 H330 C341.046 342 350 350.954 350 362 C350 373.046 341.046 382 330 382 H180 C168.954 382 160 373.046 160 362 V150 Z" fill="url(#accentGrad)" />
+
+  <!-- Smooth UI Dot Accent -->
+  <circle cx="340" cy="256" r="20" fill="#38BDF8" />
+</svg>
