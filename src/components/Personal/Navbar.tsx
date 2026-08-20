@@ -40,13 +40,13 @@ const Navbar = () => {
         </li>
 
         <li
-          onClick={() => navigate("about")}
+         onClick={() => navigate("/about")}
           className="cursor-pointer hover:text-[var(--text-color)]"
         >
           About
         </li>
         <li
-          onClick={() => navigate("templates")}
+          onClick={() => navigate("/templates")}
           className="cursor-pointer hover:text-[var(--text-color)]"
         >
           Templates
